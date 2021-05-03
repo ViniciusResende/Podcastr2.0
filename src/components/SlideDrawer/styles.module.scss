@@ -1,0 +1,32 @@
+.container {
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 424px;
+  z-index: 200;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+
+  @media (min-width: 1650px) {
+    display: none;
+  }
+
+  @media (max-width: 1080px) {
+    width: 397.5px;
+  }
+
+  @media (max-width: 722px) {
+    width: 371px;
+  }
+
+  @media (max-width: 370px) {
+    width: 315px;
+  }
+}
+
+.open {
+  transform: translateX(0);
+}
